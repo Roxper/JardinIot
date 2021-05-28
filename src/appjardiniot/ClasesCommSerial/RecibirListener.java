@@ -11,4 +11,5 @@ package appjardiniot.ClasesCommSerial;
  */
 public interface RecibirListener {
     public void RecibirDato(int d);
+    public void sendStrings(String d);
 }

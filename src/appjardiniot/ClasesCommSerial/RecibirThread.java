@@ -5,7 +5,6 @@
  */
 package appjardiniot.ClasesCommSerial;
 
-import appjardiniot.ClasesCommSerial.RecibirListener;
 import com.fazecast.jSerialComm.SerialPort;
 import java.util.Enumeration;
 
@@ -81,5 +80,12 @@ public class RecibirThread extends Thread{
         buffer=new byte[1];
         buffer[0]=(byte)d;
         Puerto.writeBytes(buffer, 1);
+    }
+        public void sendStrings(String d){
+            String []dat;
+            dat = new String[1];
+            dat[0] = (String)d;
+        //Puerto.writeBytes(0, 1);
+        //Puerto.readBytes();
     }
 }

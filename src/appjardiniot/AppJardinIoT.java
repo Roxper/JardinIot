@@ -30,7 +30,8 @@ public class AppJardinIoT {
         //Ventana.setSR(SisR);
         Ventana.setVisible(true);           //Se hace visible
         
-        
+        //Esto es una prueba
+        System.out.println("Hola");
     }
     
 }
